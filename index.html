@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="" class="center">
+    </div>
+  </header>
+
+  <main>
+
+    <!-- left of calculator -->
+    <div class="input">
+      <section class="bill">
+        <h1 class="input-header">
+          Bill
+        </h1>
+        <input type="number" placeholder="0" id="bill" class="input bill-price">
+
+
+      </section>
+      <section class="select-tip">
+        <h1 class="input-header">
+          Select Tip %
+        </h1>
+
+
+        <div class="select-btn">
+          <button class="btn-input tip-percent-input" data-percentage="5">5%</button>
+          <button class="btn-input tip-percent-input" data-percentage="10">10%</button>
+          <button class="btn-input tip-percent-input" data-percentage="15">15%</button>
+          <button class="btn-input tip-percent-input" data-percentage="25">25%</button>
+          <button class="btn-input tip-percent-input" data-percentage="50">50%</button>
+          <div class="tip-percent-input select-tip-custom">
+          <input type="text" class="btn-custom input percent" placeholder="Custom"  >
+        </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section class="no-of-people">
+        <div class="txt">
+          <h1 class="input-header">
+            Number of People
+          </h1>
+          <h1 class="error-msg close err-txt">
+            Can't be zero
+          </h1>
+        </div>
+      
+        <input type="number" placeholder="0"  id="people" class="input num " value=" ">
+       
+
+
+      </section>
+    </div>
+
+    <!-- right of calculator -->
+   
+    <div class="output">
+      <div>
+      <div class="tip-amount">
+        <div class="">
+          <h1 class="output-header tip-amount"> Tip Amount</h1>
+          <p>/ person</p>
+        </div>
+        <div class="price"><h2 class="tip-amount-value">$0.00 </h2></div>
+      </div>
+      <div class="total">
+        <div>
+          <h1 class="output-header total-amount"> Total</h1>
+          <p>/ person</p>
+        </div>
+        <div class="price"><h2 class="total-amount-value">$0.00 </h2></div>
+      </div>
+    </div>
+
+
+      <button class="reset-btn"> Reset</button>
+    </div>
+
+  </main>
+
+ 
+  
+
+  
+ 
+
+  
+
+  
+
+ 
+  
+
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oke Kolade</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
